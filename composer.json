@@ -1,0 +1,24 @@
+{
+    "name": "allgood/data-transformer-bundle",
+    "description": "Small weight alternative symfony forms",
+    "type": "library",
+    "require": {
+        "symfony/serializer": "^2.7.0",
+        "symfony/validator": "^4.2",
+        "symfony/options-resolver": "^4.2",
+        "symfony/form": "^4.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Allgood",
+            "email": "asspidssa@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Gtt\\Bundle\\DataTransformerBundle\\": "" }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.3"
+    }
+}
