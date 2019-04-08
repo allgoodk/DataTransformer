@@ -30,6 +30,8 @@ public function build(array $options = []): FieldSet
  
      $this->addField('merchant_transaction_id', new FieldSource(TransactionDetailEnum::REQUEST_ID)); // Первый аргумент имя поля, второй аргумент источник данных, третий аргумент - дефолтные значения для поля, если в источнике нет данных
 </code>
+
+
 Источник может ссылаться на одно (в примере выше) или несколько полей(пример ниже) в входных данных:
 
 <code>
@@ -44,7 +46,7 @@ $this->addField(
 );
 </code>
 
-==Валидация полей==
+''Валидация полей''
 
 При необходимости на каждое поле можно навешивать симфонийские констреинты
 
@@ -85,7 +87,7 @@ $this->addField('signature', new FieldSource('SIGN'))
 </code>
 
 
-==Трансформеры на поля==
+''Трансформеры на поля''
 
 На каждое поле можно навесить массив стандартных симфонийских трансмформеров (классы имплементирующие DataTransformerInterface).
 
@@ -130,7 +132,7 @@ class CardMaskToAsteriskTransformer implements DataTransformerInterface
 }
 </code>
 
-== Нормалайзеры ==
+''Нормалайзеры''
 Нормалайзеры в FieldSet используются для нормализации данных приходящих от внешних источников данных. 
 
 Базовый абстрактный класс AbstractFieldSetNormalizer имплементирует симфонийский интерфейс нормалайзеров NormalizerInterface.
