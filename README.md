@@ -1,15 +1,3 @@
-# Send-receiver Service
-
-* go run -race
-  > флаг для отладки блокировок
-  
-***
-
-[https://echo.labstack.com/guide](https://echo.labstack.com/guide)
-
-
-
-
 ##### FieldSet builder - альтернатива symfony form, для трансформации и валидации данных от платежных систем (ПС) и наоборот.
 
 ### Создание филдсета для новой ПС
