@@ -40,7 +40,9 @@ class CallbackTransformer implements DataTransformerInterface
      */
     public function transform($value)
     {
-        return array_map($this->callback, $value);
+        $callback = $this->callback;
+
+        return $callback($value);
     }
 
     /**
